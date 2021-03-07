@@ -693,6 +693,10 @@ body, html{
 	animation-delay: 4200ms;
 }
 
+.third--canvas .center--line h1 > span:nth-child(14){
+	animation-delay: 4300ms;
+}
+
 .third--canvas > img{
 	position: absolute;
 	width:auto;
@@ -764,4 +768,173 @@ body, html{
 	to{
 		height:200px;
 	}
+}
+
+
+/*fourth canvas*/
+
+.fourth--canvas{
+	position: relative;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	background:transparent;
+}
+
+.star--bg{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	background:url("../images/Star-Transparent-PNG.png") center / cover repeat;
+	opacity: 0;
+	animation:thirdCanvasBackground 500ms ease 3s 1 forwards;
+}
+
+.star--bg img{
+	position: absolute;
+	width:auto;
+	height:auto;
+	top:1em;
+	animation:thirdCanvasBanner 500ms ease 3.5s 1 forwards;
+	opacity: 0;
+}
+
+.star--bg img#b1{
+	transform:rotate(-15deg);
+	left:0;
+}
+
+.star--bg img#b2{
+	transform:rotate(15deg);
+	right:0;
+}
+
+@keyframes thirdCanvasBanner{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes thirdCanvasBackground{
+	from{
+		opacity: 0;
+
+	}
+	to{
+		opacity: 1;
+		
+	}
+}
+
+.fourth--canvas::before,
+.fourth--canvas::after{
+	content:"";
+	position: absolute;
+	width:100%;
+	height: 0;
+	bottom:0;
+	left:0;
+	z-index: -1;
+	animation:thirdCanvasIntro 500ms ease 0s 1 forwards;
+}
+
+.fourth--canvas::before{
+	background:#f09e40;
+	animation-delay: 200ms
+}
+
+.fourth--canvas::after{
+	background:#1080f2;
+	animation-delay:700ms;
+}
+
+
+@keyframes thirdCanvasIntro{
+	from{
+		height: 0%;
+	}
+	to{
+		height: 100%;
+	}
+}
+
+.fourth--canvas .center--line{
+	position: absolute;
+	width:0%;
+	height:5px;
+	background:#fff;
+	top:0;
+	bottom:0;
+	margin:auto;
+	left:0;
+	animation:thirdCanvasCenterLine 500ms ease 1s 1 forwards,
+	thirdCanvasCenterLineOne 500ms ease 1.5s 1 forwards;
+}
+
+.fourth--canvas .center--line img{
+	position: absolute;
+	width:auto;
+	height:auto;
+	top:50%;
+	transform:translateY(-50%) scale(0);
+	opacity: 0;
+	animation:thirdCanvasBalloons 500ms ease 2s 1 forwards;
+}
+
+.fourth--canvas .center--line img#bl--left{
+	left:2em;
+}
+
+.fourth--canvas .center--line img#bl--right{
+	right:2em;
+	animation-delay: 2.5s;
+}
+
+.fourth--canvas .center--line h1{
+	position: absolute;
+	width:auto;
+	height:auto;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	color:#1080f2;
+	text-transform: uppercase;
+	margin:0;
+	font-size:5em;
+}
+
+.fourth--canvas .center--line h1 > span{
+	position: relative;
+	top:2em;
+	opacity: 0;
+	animation:thirdCanvasLastText 100ms ease 3s 1 forwards;
+}
+
+.fourth--canvas > img{
+	position: absolute;
+	width:auto;
+	height:auto;
+	bottom:1em;
+	transform: scale(0);
+	animation: giftIcon 500ms ease 4300ms 1 forwards;
+}
+
+.fourth--canvas > img#gf1{
+	left:35%;
+}
+
+.fourth--canvas > img#gf2{
+	left:45%;
+	bottom:2em;
+	animation-delay: 4800ms;
+}
+
+.fourth--canvas > img#gf3{
+	left:55%;
+	animation-delay: 5300ms;
 }
