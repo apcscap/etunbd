@@ -804,11 +804,13 @@ body, html{
 .star--bg img#b1{
 	transform:rotate(-15deg);
 	left:0;
+	height: 200px;
 }
 
 .star--bg img#b2{
 	transform:rotate(15deg);
 	right:0;
+	height: 200px;
 }
 
 @keyframes thirdCanvasBanner{
@@ -866,7 +868,7 @@ body, html{
 .fourth--canvas .center--line{
 	position: absolute;
 	width:0%;
-	height:5px;
+	/*height:5px;*/
 	background:#fff;
 	top:0;
 	bottom:0;
@@ -876,10 +878,11 @@ body, html{
 	thirdCanvasCenterLineOne 500ms ease 1.5s 1 forwards;
 }
 
-.fourth--canvas .center--line img{
+.fourth--canvas .center--line img {
 	position: absolute;
 	width:auto;
-	height:auto;
+	max-height: 100px;
+	object-fit: contain;
 	top:50%;
 	transform:translateY(-50%) scale(0);
 	opacity: 0;
@@ -888,14 +891,16 @@ body, html{
 
 .fourth--canvas .center--line img#bl--left{
 	left:2em;
+	height:200px;
 }
 
 .fourth--canvas .center--line img#bl--right{
 	right:2em;
 	animation-delay: 2.5s;
+	height:200px;
 }
 
-.fourth--canvas .center--line h1{
+.fourth--canvas .center--line p{
 	position: absolute;
 	width:auto;
 	height:auto;
@@ -905,7 +910,7 @@ body, html{
 	color:#1080f2;
 	text-transform: uppercase;
 	margin:0;
-	font-size:5em;
+	color: black;
 }
 
 .fourth--canvas .center--line h1 > span{
@@ -918,7 +923,7 @@ body, html{
 .fourth--canvas > img{
 	position: absolute;
 	width:auto;
-	height:auto;
+	height:200px;
 	bottom:1em;
 	transform: scale(0);
 	animation: giftIcon 500ms ease 4300ms 1 forwards;
@@ -926,15 +931,18 @@ body, html{
 
 .fourth--canvas > img#gf1{
 	left:35%;
+	height:200px;
 }
 
 .fourth--canvas > img#gf2{
 	left:45%;
 	bottom:2em;
 	animation-delay: 4800ms;
+	height:200px;
 }
 
 .fourth--canvas > img#gf3{
 	left:55%;
 	animation-delay: 5300ms;
+	height:200px;
 }
