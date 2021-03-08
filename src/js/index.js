@@ -32,15 +32,15 @@ let containerToggleOne = setTimeout(function(){
 let removeFirstSlide = setTimeout(function(){
 	document.getElementsByClassName("first--slide")[0].setAttribute("style","display:none;")
 	secondCanvas.setAttribute("style","display:block");
-},6500);
+},7000);
 
 let removeSecondCanvas = setTimeout(function(){
 	secondCanvas.setAttribute("style","display:none");
 	thirdCanvas.setAttribute("style","display:block")
-},9800)
+},14000)
 
 
 let removeThirdCanvas = setTimeout(function(){
 	thirdCanvas.setAttribute("style","display:none");
 	fourthCanvas.setAttribute("style","display:block")
-},15800)
+},24000)
