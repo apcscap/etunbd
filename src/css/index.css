@@ -881,7 +881,7 @@ body, html{
 .fourth--canvas .center--line img {
 	position: absolute;
 	width:auto;
-	max-height: 100px;
+	height: auto;
 	object-fit: contain;
 	top:50%;
 	transform:translateY(-50%) scale(0);
